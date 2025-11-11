@@ -4,7 +4,7 @@
       - "{{ item }} is defined"
     fail_msg: "{{ item }} variable is required"
   loop:
-    - {ydb_archive | ydbd_binary}
+    - "{{ ydb_archive | ydbd_binary }}"
     - ydb_config
 
 - name: create certs group
